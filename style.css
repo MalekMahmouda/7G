@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+#sidebar {
+    background-image: linear-gradient(#000090, #1800c0, #3048c0);
+    width: 25%;
+    height: 100%;
+    padding-top: 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#title {
+    color: white;
+    margin-left: 25%;
+}
+
+.sidebarcontent {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.sidebarcontent:hover {
+    background-color: #fff;
+    width: 100%;
+    color: black;
+}
+
+#container {
+    margin-left: 30%;
+    width: 70%;
+}
+
+h2 {
+    color: darkblue;
+}
+
+hr {
+    width: 50%;
+    border: 5px solid darkblue;
+    border-radius: 25px;
+}
+
+#row {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+#row img {
+    width: 45%;
+    margin-left: 2%;
+    opacity: 50%;
+}
+
+#row img:hover {
+    opacity: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+#submit {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: gainsboro;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form {
+    display: block;
+    width: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #dddddd;
+}
+
+#white {
+    border-right: 5px solid white;
+}
+
+.help {
+    border-bottom: 1px solid #d7d2d2;
+}
+
+#learnheading {
+    background-color: #6E6E6E;
+}
+
+#teachHeading {
+    background-color: #f44236;
+}
+
+#learn {
+    background-color: white;
+    padding: 10px;
+    border: 0px solid black;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+#teach {
+    background-color: #f44236;
+    padding: 10px;
+    border: 0px solid black;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+#learn:hover, #teach:hover {
+    background-color: black;
+    color: white;
+}
+
+#services table {
+    margin-bottom: 20px;
+}
+
+#services table h1, #services table span {
+    display: block;
+}
+
+#services table span {
+    font-size: 16px;
+}
