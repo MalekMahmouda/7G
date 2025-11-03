@@ -1,0 +1,81 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[redirects]]
+  from = "/login"
+  to = "/login"
+  status = 200
+
+[[redirects]]
+  from = "/register"
+  to = "/register"
+  status = 200
+
+[[redirects]]
+  from = "/dashboard"
+  to = "/dashboard"
+  status = 200
+
+[[redirects]]
+  from = "/profile"
+  to = "/profile"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact"
+  status = 200
+
+[[redirects]]
+  from = "/features"
+  to = "/features"
+  status = 200
+
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing"
+  status = 200
+
+[[redirects]]
+  from = "/docs"
+  to = "/docs"
+  status = 200
+
+[[redirects]]
+  from = "/forgot-password"
+  to = "/forgot-password"
+  status = 200
+
+[[redirects]]
+  from = "/reset-password"
+  to = "/reset-password"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"
